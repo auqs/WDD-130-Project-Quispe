@@ -135,7 +135,6 @@ nav button:hover {
     border: 1px solid #bfa97a;
     grid-column: 2/3;
     padding: 20px;
-    justify-self: center;
 }
 
 /* Benefits Section */
@@ -160,7 +159,7 @@ nav button:hover {
     grid-template-rows: 1fr 3fr;
     border: 1px solid #bfa97a;
     padding: 4%;
-    height: 88%;
+    height: 91%;
     background-color: #2B2F32;
 }
 
