@@ -10,7 +10,7 @@ I used Google Gemini to create images for the website, because the client did no
 
 /* Overall CSS */
 /********************************************************************/
-html {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -26,6 +26,7 @@ body {
 
 /* Navigation */
 /********************************************************************/
+
 header {
     border-bottom: 1px solid #bfa97a;
 }
@@ -76,7 +77,13 @@ nav button:hover {
 /* Main Title */
 /********************************************************************/
 
+main {
+    display: grid;
+    grid-template-rows: 3% 10% 3% 40% 3% 10% 3% 40% 10%;
+}
+
 #title_section {
+    grid-row: 2/3;
     display: grid;
     grid-template-columns: 1fr 4fr 3fr;
 }
@@ -91,6 +98,7 @@ nav button:hover {
 /********************************************************************/
 
 #hashing_section {
+    grid-row: 4/5;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 4fr 1fr;
 }
@@ -107,7 +115,7 @@ nav button:hover {
     grid-template-rows: 1fr 4fr;
     border: 1px solid #bfa97a;
     padding: 4%;
-    height: 88%;
+    height: 100%;
     background-color: #2B2F32;
 }
 
@@ -127,6 +135,7 @@ nav button:hover {
 /********************************************************************/
 
 #secondary_section {
+    grid-row: 6/7;
     display: grid;
     grid-template-columns: 3fr 4fr 1fr;
 }
@@ -141,6 +150,7 @@ nav button:hover {
 /********************************************************************/
 
 #benefits_section {
+    grid-row: 8/9;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
 }
@@ -159,7 +169,7 @@ nav button:hover {
     grid-template-rows: 1fr 3fr;
     border: 1px solid #bfa97a;
     padding: 4%;
-    height: 91%;
+    height: 100%;
     background-color: #2B2F32;
 }
 
@@ -173,6 +183,24 @@ nav button:hover {
     justify-self: center;
     font-size: 100%;
 }
+
+/* Footer */
+/********************************************************************/
+
+footer {
+    border: 1px solid #bfa97a;
+    position: relative; top: 210px
+}
+
+#copyright {
+    justify-self: center;
+}
+
+#authors {
+    justify-self: center;
+}
+
+
 
 
 
