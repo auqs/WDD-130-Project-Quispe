@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/page2Styles.css">
+    <title>Explore How Password Hashing Works</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Site logo">
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Page one</a></li>
+                <li><a href="page2.html">Page two</a></li>
+                <li><a href="Other.html">Page three</a></li>
+            </ul>
+
+            <button>Button</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Main Title -->
+        <section id="title_section">
+            <h1 id="title">Dechipering Hashing</h1>
+        </section>
+
+        <!-- Hashing Section -->
+        <section id="hashing_section">
+            <img id="hashing_image" src="images/passwordHash.png" alt="Password Hashing is a 1-Way Street">
+            <article id="hashing_article">
+                <h3 class="hashing" id="hashing_subtitle">How Hashing Works</h3>
+                <p class="hashing" id="hashing_paragraph">
+                    Password hashing starts when the user enters their regular password.
+                    The password is then "hashed", or converted to a random string using a specific mathematic function or algorithm.
+                    The "hashed" password is a string of charachters and numbers that is meaningless by itself.
+                    However, the computer system can compare the "hashed" string against the original "hashed" string, that was created when the user first chose their password.
+                    It the new hashed string and the original hashed string match, the user is authenticated and allowed access.
+                </p>
+            </article>
+        </section>
+
+        <!-- Secondary Title -->
+        <section id="secondary_section">
+            <h1 id="secondary_title">Hashing Unlocked</h1>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="benefits_section">
+            <img id="benefits_image" src="images/passwordHash2.png" alt="Password Hashing is a 1-Way Street">
+            <article id="benefits_article">
+                <h3 class="benefits" id="benefits_subtitle">Why is Hashing so Useful?</h3>
+                <p class="benefits" id="benefits_paragraph">
+                    Cyberattacks are constant threat in the information age.
+                    If a system is compromised by a cyberattack, a hacker could potentially get every user's password, if they were unhashed.
+                    Hashing allows the system to store only the hashed string from the password, instead of the password itself.
+                    This way, if the system is compromised, The hacker only has access to the hash, which by itself is meaningless.
+                    The hacker would have to test every password, see its output hash, and match it against the stored hash, which is much more difficult.
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
